@@ -2,10 +2,33 @@
 title: "eds212_day3_task2"
 ---
 
-## Quarto
-
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+### Practice vectors
+Using the c() function, create and store two new vectors, called vec_a and vec_b, where a=(1,6) and b=(2,4):
 
 ```{r}
-1 + 1
+vec_a <- c(1,6)
+vec_b <- c(2,4)
+
+# --- Vector operations
+sum_vec <- vec_a + vec_b
+# --- test a+b = (3,10)
+sum_vec
+
+
+diff_vec <- vec_b - vec_a
+# --- test a+b = (1,-2)
+diff_vec
+
+mult_vec <- 4 * vec_a
+# --- test 4a = (4,24)
+mult_vec
+
+dotproduct_vec <- vec_a %*% vec_b
+# --- test a*b = 2+24 = 26
+dotproduct_vec 
+
 ```
+
+
+
+
